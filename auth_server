@@ -58,7 +58,10 @@ class AuthenticationI(IceGauntlet.Authentication):
         with open(USERS_FILE, 'w') as contents:
             json.dump(self._users_, contents, indent=4, sort_keys=True)
 
+    # pylint: disable=C0103
+    # Name given by slice
     def changePassword(self, user, currentPassHash, newPassHash, current=None):
+    # pylint: enable=C0103
         '''Set/Change user password'''
         logging.debug(f'Change password requested by {user}')
         if user not in self._users_:
@@ -105,6 +108,7 @@ class AuthenticationI(IceGauntlet.Authentication):
         return token in self._active_tokens_
 
     def getOwner(self, token, current=None):
+        '''Return username related to a certain token'''
         if token not in self._active_tokens_:
             raise IceGauntlet.Unauthorized()
 
