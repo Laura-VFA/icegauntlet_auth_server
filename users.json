@@ -1,1 +1,10 @@
-{}
+{
+    "user1": {
+        "current_token": "bIf7UsRSLvVbFWnj68wGoHBc1D9z5klDuoCmnSlN",
+        "password_hash": "7fb8fceb9440e7cf4e2ce22be1e2c1a17164caed75f1f9ce3204e689ef7fd762"
+    },
+    "user2": {
+        "current_token": "vN58gmL8XccrncHNBN965nlnzVozgQwIG1P5LS7d",
+        "password_hash": "7fb8fceb9440e7cf4e2ce22be1e2c1a17164caed75f1f9ce3204e689ef7fd762"
+    }
+}
